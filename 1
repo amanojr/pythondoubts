@@ -1,0 +1,17 @@
+userCandies=int(input("How many candies you need?"))
+
+candiesInStock=3
+
+i=1
+while i<=userCandies:
+  if i>candiesInStock:
+    print("out of stock")
+    break
+  print(f"{i} Candy")
+  candiesInStock-=1
+  print(f"{candiesInStock} in stock")
+  i+=1
+  
+
+
+print("Thank You for shopping")
